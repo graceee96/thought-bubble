@@ -16,12 +16,18 @@ const userSchema = new Schema(
             match: {$regex: /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/},
         },
         thoughts: [Thoughts],
-        friends: [users]
+        friends: [
+            {
+                type: Schema.Types.ObjectId,
+                ref: 'user',
+            }
+        ]
     },
     {
-        toJson: {
+        toJSON: {
             virtuals: true,
-        }
+        },
+        id: false,
     }
 )
 
@@ -30,3 +36,5 @@ userSchema
     .get(function() {
         return this.friends.length;
     })
+
+const User = model('user', userSchema);
