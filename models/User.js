@@ -1,5 +1,4 @@
 const { Schema, model } = require('mongoose');
-const Thoughts = require('./Thought');
 
 const userSchema = new Schema(
     {
@@ -31,6 +30,7 @@ const userSchema = new Schema(
     }
 )
 
+// sees how many friends a user has
 userSchema
     .virtual('friendCount')
     .get(function() {
@@ -38,3 +38,5 @@ userSchema
     })
 
 const User = model('user', userSchema);
+
+module.exports = User;
