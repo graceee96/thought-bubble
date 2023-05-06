@@ -36,32 +36,8 @@
         "friends": []
     },
     {
-        "username": "el_tigre_chino",
-        "email": "ben.chang10@greendale.edu",
-        "thoughts": [],
-        "friends": []
-    },
-    {
         "username": "the_real_abed",
-        "email": "annie.edison20@greendale.edu",
-        "thoughts": [],
-        "friends": []
-    },
-    {
-        "username": "leslieknope4pawnee",
-        "email": "leslie.knope@pawnee.in.gov",
-        "thoughts": [],
-        "friends": []
-    },
-    {
-        "username": "duke_silver_official",
-        "email": "redacted@pawnee.in.gov",
-        "thoughts": [],
-        "friends": []
-    },
-    {
-        "username": "bens_calzones",
-        "email": "ben.wyatt@accountingfirm.com",
+        "email": "abed@greendale.edu",
         "thoughts": [],
         "friends": []
     }
