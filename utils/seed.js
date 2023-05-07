@@ -1,6 +1,7 @@
 const connection = require('../config/connection');
 const { User, Thought } = require('../models');
-const thoughtData = require('./seeds/thoughtData')
+const thoughtData = require('./seeds/thoughtData');
+const userData = require('./seeds/userData')
 
 connection.on('error', (err) => err);
 
@@ -9,9 +10,18 @@ connection.once('open', async () => {
 
     await User.deleteMany({});
     await Thought.deleteMany({});
+    
+    //create thought documents
+    const thoughts = await Thought.collection.insertMany(thoughtData);
 
     //create new user documents
+    let users = await User.collection.insertMany(userData);
 
-    //create thought documents
-    Thought.create(thoughtData, (err) => {err ? handleError(err) : console.log('Created new documents')})
+    //insert _id of thoughts array into users
+
+    //add _id into friends array of users - each user has random amounts of random friends
+
+
+    console.log('seeding complete 🌱')
+    process.exit(0);
 })

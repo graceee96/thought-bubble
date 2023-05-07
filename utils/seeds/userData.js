@@ -1,4 +1,4 @@
-let users = [
+const users = [
     {
         "username": "picture_it_sophia",
         "email": "sophia.petrillo@goldengirls.com",
@@ -42,15 +42,5 @@ let users = [
         "friends": []
     }
 ];
-
-//update users array - add to friends array
-//each user should have a random number of random friends
-for (i = 0; i < users.length; i++) {
-    //get one user
-    const user = users[i];
-
-    //take out current user
-    
-}
 
 module.exports = users;

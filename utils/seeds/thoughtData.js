@@ -6,12 +6,12 @@ const thoughts = [
     {
         "thoughtText": "Crying is for plain women. Pretty women go shopping.",
         "username": "blanche_forever45",
-        "reactions": [reactions1]
+        "reactions": [...reactions1]
     },
     {
         "thoughtText": "People waste their time pondering whether a glass is half empty or half full. Me, I just drink whatever is in the glass.",
         "username": "picture_it_sophia",
-        "reactions": [reactions2]
+        "reactions": [...reactions2]
     },
     {
         "thoughtText": "some files are just too awesome for the wall",
@@ -21,52 +21,52 @@ const thoughts = [
     {
         "thoughtText": "A garconanokin is the precise moment when dog doo turns white.",
         "username": "rose_of_stolaf",
-        "reactions": [reactions4]
+        "reactions": [...reactions4]
     },
     {
         "thoughtText": "As they say in St. Olaf: helderberlderflergen-nursurblrgen",
         "username": "rose_of_stolaf",
-        "reactions": [reactions5]
+        "reactions": [...reactions5]
     },
     {
         "thoughtText": "I'm from the South. Flirting is part of my heritage.",
         "username": "blanche_forever45",
-        "reactions": [reactions6]
+        "reactions": [...reactions6]
     },
     {
         "thoughtText": "Picture it: Sicily 1922",
         "username": "picture_it_sophia",
-        "reactions": [reactions7]
+        "reactions": [...reactions7]
     },
     {
         "thoughtText": "My mother used to say: the older you get, the better you get. Unless you’re a banana.",
         "username": "rose_of_stolaf",
-        "reactions": [reactions8]
+        "reactions": [...reactions8]
     },
     {
         "thoughtText": "I was kinda raised by TV",
         "username": "the_real_abed",
-        "reactions": [reactions9]
+        "reactions": [...reactions9]
     },
     {
         "thoughtText": "Dean Pelton here, wishing you another magic year at Greendale--ranked America's #2 community college by GreendaleCommunityCollege.com.",
         "username": "dean_of_greendale",
-        "reactions": [reactions10]
+        "reactions": [...reactions10]
     },
     {
         "thoughtText": "you are now creating six different timelines",
         "username": "the_real_abed",
-        "reactions": [reactions11]
+        "reactions": [...reactions11]
     },
     {
         "thoughtText": "Off campus, I'm just a craig-ular Joe.",
         "username": "dean_of_greendale",
-        "reactions": [reactions12]
+        "reactions": [...reactions12]
     },
     {
         "thoughtText": "sometimes I think I lost something really important to me, and it turns out I already ate it",
         "username": "troy.troy.troy",
-        "reactions": [reactions13]
+        "reactions": [...reactions13]
     },
     {
         "thoughtText": "you are the opposite of Batman",
@@ -76,7 +76,7 @@ const thoughts = [
     {
         "thoughtText": "Miami is nice. So I'll say it thrice!",
         "username": "rose_of_stolaf",
-        "reactions": [reactions15]
+        "reactions": [...reactions15]
     },
     {
         "thoughtText": "Isn't it amazing how I can feel so bad, and still look so good?",
@@ -86,7 +86,7 @@ const thoughts = [
     {
         "thoughtText": "You know my motto. Today could be the last day of your life.",
         "username": "picture_it_sophia",
-        "reactions": [reactions17]
+        "reactions": [...reactions17]
     },
     {
         "thoughtText": "This awkward silence has been going on for days!",
@@ -96,7 +96,7 @@ const thoughts = [
     {
         "thoughtText": "My emotions! My emotions!",
         "username": "troy.troy.troy",
-        "reactions": [reactions19]
+        "reactions": [...reactions19]
     },
     {
         "thoughtText": "six seasons and a movie!",
@@ -106,7 +106,7 @@ const thoughts = [
     {
         "thoughtText": "Go to sleep, sweetheart. Pray for brains.",
         "username": "bigmean_dorothy",
-        "reactions": [reactions21]
+        "reactions": [...reactions21]
     }
 ];
 
