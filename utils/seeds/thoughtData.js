@@ -1,5 +1,5 @@
 //import reactions
-const { reactions1, reactions2, reactions4, reactions5, reactions6, reactions7, reactions8, reactions9, reactions10, reactions11, reactions12, reactions13, reactions15, reactions17, reactions19, reactions21 } = require('./userData.json');
+const { reactions1, reactions2, reactions4, reactions5, reactions6, reactions7, reactions8, reactions9, reactions10, reactions11, reactions12, reactions13, reactions15, reactions17, reactions19, reactions21 } = require('./reactionData');
 
 //thoughtData
 const thoughts = [
