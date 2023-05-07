@@ -20,8 +20,15 @@ module.exports = {
     },
 
     //create a new thought
-    
+    createThought(req, res) {
+        Thought.create(req.body)
+            .then
+    }
 
     //update a thought using _id
     //delete a thought using _id
+
+    //create a reaction
+
+    //delete a reaction
 }
