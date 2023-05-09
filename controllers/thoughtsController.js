@@ -5,7 +5,10 @@ module.exports = {
     getThoughts(req, res) {
         Thought.find()
             .then((thoughts) => res.json(thoughts))
-            .catch((err) => res.status(500).json(err))
+            .catch((err) => {
+                console.log(err);
+                res.status(500).json(err)
+            })
     },
 
     //render a single thought using _id
@@ -21,11 +24,12 @@ module.exports = {
 
     //create a new thought
     createThought(req, res) {
+        console.log(req.body)
         Thought.create(req.body)
             .then((thought) => {
                 return User.findOneAndUpdate(
                     { _id: req.body.userId },
-                    { $addToSet: { thoughts: thought.id } },
+                    { $addToSet: { thoughts: thought._id } },
                     { new: true }
                 )
             })

@@ -6,7 +6,7 @@ const formatDate = (v) => {
 
     //get month - write it out
     let month = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-    month = mon[date.getMonth()];
+    month = month[date.getMonth()];
 
     //get date
     const day = date.getDate();
@@ -14,15 +14,15 @@ const formatDate = (v) => {
     //format time
     //format hour
     let hour = date.getHours();
-    hour = h % 12;
+    hour = hour % 12;
     hour = hour ? hour : 12;
 
     //add am/pm
-    const ampm = hours >= 12 ? 'pm' : 'am';
+    const ampm = hour >= 12 ? 'pm' : 'am';
 
     //format minutes
     let minute = date.getMinutes();
-    minute = minute < 0 ? '0' + minute : minute;
+    minute = minute < 10 ? '0' + minute : minute;
 
     const time = `${hour}:${minute} ${ampm}`;
 
