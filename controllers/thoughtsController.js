@@ -14,6 +14,8 @@ module.exports = {
     //render a single thought using _id
     getSingleThought(req, res) {
         Thought.findOne({ _id: req.params.thoughtId })
+            .select('-Thought.reactions._id')
+            .select('-Thought.reactions.id')
             .then((thought) =>
                 !thought
                     ? res.status(404).json({ message: 'No thought with this ID' })
