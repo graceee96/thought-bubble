@@ -10,19 +10,20 @@ connection.once('open', async () => {
 
     await User.deleteMany({});
     await Thought.deleteMany({});
-    
+    let thoughts;
     //create thought documents
-    const thoughts = await Thought.collection.insertMany(thoughtData);
+    for (const thought of thoughtData) {
+        thoughts = await Thought.create(thought);
+    }
+    
 
-    console.log(thoughts)
+    //console.log(thoughts);
+
     //create new user documents
-    //let users = await User.collection.insertMany(userData);
-
     //insert _id of thoughts array into users
     for (const user of userData) {
         await User.create({...user, thoughts: [thoughtData[Math.floor(Math.random() * thoughtData.length)]._id]})
     }
-
 
     console.log('seeding complete 🌱')
     process.exit(0);

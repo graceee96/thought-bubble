@@ -53,11 +53,10 @@ In Insomnia, data can be created, read, updated, and deleted using the correct r
 
 ### Link to video walkthrough
 
-
 ## Credits
 
 ### Special Thanks
- Made with help from Bryan Swarthout and Scott McAnally.
+ Made with help from Bryan Swarthout, Shawn Tschoepe, and Scott McAnally.
 
 ## License
 This repository is licensed under the [MIT License](https://opensource.org/licenses/MIT).
