@@ -19,7 +19,7 @@ Thought Bubble is an social network web application API. Users can share their t
 
 ## Usage
 
-To start, run `node utils/seed.js` in the command line. This automatically creates the database in Mongo Compass and adds seed data. Then, start your server by running `node index.js` in the command line.
+To start, run `node utils/seeds/seed.js` in the command line. This automatically creates the database in Mongo Compass and adds seed data. Then, start your server by running `node index.js` in the command line.
 
 In Insomnia, data can be created, read, updated, and deleted using the correct routes:
 
@@ -52,6 +52,8 @@ In Insomnia, data can be created, read, updated, and deleted using the correct r
     * `DELETE` - deletes a reaction to a thought
 
 ### Link to video walkthrough
+
+https://drive.google.com/file/d/1IYR5k0yf9kk_Mww-_6hD710DCr_OD07Y/view?usp=sharing
 
 ## Credits
 
